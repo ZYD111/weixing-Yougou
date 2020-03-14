@@ -1,0 +1,101 @@
+/* pages/goos_detail/goos_detail.wxss */
+swiper{
+  width: 100%;
+  height: 400rpx;
+}
+swiper navigator{
+    text-align: center;
+}
+swiper image{
+  width: 60%;
+}
+.pic_pice{
+  color: red;
+ margin-top: 30rpx;
+ padding-left: 20rpx;
+}
+.pic_xiang{
+  display: flex;
+  height: 120rpx;
+  border-bottom: 20rpx solid rgb(236, 230, 230);
+}
+.pic_left{
+  flex: 4;
+  border-right:5rpx solid rgb(236, 230, 230)
+}
+.pic_left text{
+  font-size: 35rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;   
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.pic_right{
+  flex: 1;
+  text-align: center;
+}
+.pic_right image{
+  width: 40%;
+}
+.pic_right view{
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.pic_xq{
+  width: 100%;
+  color: red;
+  font-size: 50rpx;
+  border-bottom: 20rpx solid rgb(236, 230, 230);
+  padding: 20rpx;
+}
+.pic_img{
+  width: 100%;
+}
+
+.tool_item{
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.tool_item navigator{
+  width: 100%;
+}
+.tool_item2{
+  flex: 2;
+  background-color: white;
+}
+.tool_jia{
+  flex: 3;
+  background-color: rgb(243, 247, 40);
+  text-align: center;
+  color: white;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+.tool_fu{
+  flex: 3;
+  background-color: red;
+  text-align: center;
+  color: white;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+.tool_img{
+  width: 100%;
+  text-align: center;
+}
+.tool_img image{
+  width: 35%;
+} 
+.tool_text{
+  width: 100%;
+  text-align: center;
+  font-size: 25rpx;
+}

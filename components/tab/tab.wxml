@@ -1,0 +1,6 @@
+<!--components/tab/tab.wxml-->
+<view class="tab ">
+<block wx:for="{{titles}}" wx:key="index">
+ <view class="tabs {{count==index ? 'active':''}}" bindtap="handletabClick" data-index="{{index}}">{{item}}</view>
+</block>
+</view>

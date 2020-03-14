@@ -1,0 +1,80 @@
+<!--pages/goos_detail/goos_detail.wxml-->
+<swiper indicator-dots autoplay interval="2000">
+	<block wx:for="{{piclist.pics}}" wx:key="pic_id">
+		<swiper-item>
+			<navigator url="">
+				<image mode="widthFix" src="{{item.pics_mid}}"></image>
+			</navigator>
+		</swiper-item>
+	</block>
+</swiper>
+
+<view class="pic_pice">¥ {{piclist.goods_price}}</view>
+<view class="pic_xiang">
+	<view class="pic_left">
+		<text>{{piclist.goods_name}}</text>
+	</view>
+	<view class="pic_right">
+		<image mode="widthFix" src="/icons/images/shoucang.png"></image>
+		<view class="pic_sou">收藏</view>
+	</view>
+</view>
+
+<view class="pic_tu">
+	<view class="pic_xq">图文详情</view>
+	<view class="pic_img">
+		<rich-text nodes="{{piclist.goods_introduce}}"></rich-text>
+	</view>
+</view>
+
+<view class="tool_item">
+
+
+	<view class="tool_item2">
+		<navigator url="">
+			<view class="tool_img">
+				<image mode="widthFix" src="/icons/images/kefu.png"></image>
+			</view>
+			<view class="tool_text">客服</view>
+		</navigator>
+	</view>
+
+
+
+	<view class="tool_item2">
+		<navigator url="">
+			<view class="tool_img">
+				<image mode="widthFix" src="/icons/images/fenxiang.png"></image>
+			</view>
+			<view class="tool_text">分享</view>
+		</navigator>
+	</view>
+
+
+
+	<view class="tool_item2">
+		<navigator>
+			<view class="tool_img">
+				<image mode="widthFix" src="/icons/images/gouwuche3.png"></image>
+			</view>
+			<view class="tool_text">购物车</view>
+		</navigator>
+	</view>
+
+
+
+	<view class="tool_jia">
+		<navigator>
+			加入购物车
+		</navigator>
+	</view>
+
+
+	<view class="tool_fu">
+		<navigator>
+			立即付款
+		</navigator>
+	</view>
+
+
+</view>

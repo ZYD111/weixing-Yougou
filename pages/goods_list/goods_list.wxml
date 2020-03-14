@@ -1,0 +1,18 @@
+<!--pages/goods_list/goods_list.wxml-->
+<searchInput/>
+<tab/>
+<block wx:for="{{shopList}}" wx:key="goods_id">
+<navigator url="/pages/goos_detail/goos_detail?goods_id={{item.goods_id}}">
+ <view class="goods_list">
+     <view class="good_left">
+      <image mode="widthFix" src="{{item.goods_small_logo ? item.goods_small_logo:'http://image2.suning.cn/uimg/b2c/newcatentries/0070079639-000000000719636640_1_400x400.jpg'}}"></image>
+     </view>
+     <view class="good_right">
+      <view class="good_font"> 
+      <text>{{item.goods_name}}</text>
+    </view>
+      <view class="good_price">¥ {{item.goods_price}}</view>
+     </view>
+ </view>
+</navigator>
+</block>
